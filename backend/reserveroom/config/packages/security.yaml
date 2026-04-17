@@ -23,6 +23,7 @@ security:
             pattern: ^/api
             stateless: true
             jwt: ~
+
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
@@ -33,6 +34,7 @@ security:
     access_control:
         - { path: ^/api/register, roles: PUBLIC_ACCESS }
         - { path: ^/api/login, roles: PUBLIC_ACCESS }
+        - { path: ^/api/dashboard, roles: IS_AUTHENTICATED_FULLY }
         - { path: ^/api/product/public, roles: PUBLIC_ACCESS }
         - { path: ^/api/category/public, roles: PUBLIC_ACCESS }
         - { path: ^/api/order/public, roles: PUBLIC_ACCESS }

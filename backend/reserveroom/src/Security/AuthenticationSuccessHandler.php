@@ -17,7 +17,9 @@ class AuthenticationSuccessHandler implements AuthenticationSuccessHandlerInterf
     {
         $jwt = $this->jwtManager->create($token->getUser());
 
-        $response = new JsonResponse(['message' => 'Login successful']);
+        $response = new JsonResponse(['message' => 'Login successful',
+            'token' => $jwt
+    ]);
         $response->headers->setCookie(Cookie::create('BEARER')
             ->withValue($jwt)
             ->withHttpOnly(true)
