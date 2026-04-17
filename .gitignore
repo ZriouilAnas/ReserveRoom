@@ -44,6 +44,7 @@ dist-ssr
 *.env.dev
 *.env.prod
 *.env
+.env
 #### frontend specific
 frontend/node_modules/
 frontend/build/
