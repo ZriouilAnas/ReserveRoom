@@ -2,6 +2,7 @@
 ###> symfony/framework-bundle ###
 backend/reserveroom/.env.local
 backend/reserveroom/.env.prod
+backend/reserveroom/.env
 backend/reserveroom/.env.local.php
 backend/reserveroom/.env.*.local
 backend/reserveroom/config/secrets/prod/prod.decrypt.private.php
